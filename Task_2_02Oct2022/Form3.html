@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="Student.html" method="POST" enctype="multipart/form-data"> 
-        <legend><h1>Form</h1></legend>
+        <h1>Form</h1>
     <input type="radio">import from a single
     <input type="radio">import from a HA pair
     <input type="radio">import from a Multiple system
@@ -16,25 +16,25 @@
     <fieldset>
     <legend>Single Storage System Informaton</legend>
     <label>transport </label>
-    <input type="text" name ="username" placeholder="HTTP">
-    <br>
-    <label for="username:">Username</label>
-        <input type="text" name="username" id="username" placeholder="root">
-        <br><br>
+    <select name="transport" id="transport">
+        <option value="HTTP">HTTP</option>
+        </select>
+       <br><br>
         <label for="hostname">Host Name</label>
         <input type="text" name="hostname" id="hostname" required>
         <br><br>
         <label for="username">Username</label>
         <input type="text" name="username" id="username" required>
         <br><br>
-        <label for="password:">Password</label>
+        <label for="password">Password</label>
         <input type="text" name="password" id="password" required>
+        <button type="button">Test</button>
          <br>
         </fieldset>
         <fieldset>
       <legend>Directory to store data</legend>
       <br>
-      <input type="text area"> <button type="button"> Browser</button> <button type="button">clear</button>
+      <input type="text"> <button type="button"> Browser</button> <button type="button">clear</button>
        <br>
         </fieldset>
        <fieldset>

@@ -16,7 +16,7 @@
         <input type="text" name="lastname" maxlength="50" id="lastname" required>
         <br><br>
         <label for="email">Email</label>
-        <input type="mail"     placeholder="Enter a mail">
+        <input type="email" id="email"     placeholder="Enter a Email">
         <br><br>
         <label for="mobilenumber">Mobile Number</label>
         <input type="text" name="mobilenumber" id="mobilenumber" required>
@@ -25,16 +25,8 @@
         <input type="radio" value="Male" name="Gender">Male
         <input type="radio" value="Female" name="Gender">Female
         <br><br>
-        <label>date of Birth(DOB)</label>
-        <select>
-            <Option>day</Option>
-        </select>
-        <select>
-            <option>month</option>
-        </select>
-        <select>
-            <option>Year</option>
-        </select>
+        <label for="DOB">date of Birth(DOB)</label>
+        <input type="date" name="DOB" id="DOB" required>
         <br><br>
         <label>Address</label> <textarea id="Address" name="Address" rows="4" cols="50"></textarea>
         <br><br>
@@ -50,11 +42,13 @@
         <label for="country">Country</label>
         <input type="text" name="country" id="country" required>
         <br><br>
-        <label>Hobbies</label><input type="checkbox">Drawing <input type="checkbox">Singing <input type="checkbox">Danceing <input type="checkbox">Sketching
-
-         <input type="checkbox">others <textarea id="Address" name="Address" rows="4" cols="50"></textarea>
+        <label>Hobbies  </label><input type="checkbox">Drawing <input type="checkbox">Singing <input type="checkbox">Danceing <input type="checkbox">Sketching
+          <br>
+         <input type="checkbox">others 
+         <input type="text">
          <br><br>
          <label>Qualification</label>
+         <br>
          <input type="checkbox">High school(10th)
          <br>
          <input type="checkbox">High school(12th)
@@ -65,8 +59,9 @@
          <br>
          <input type="checkbox">phd
          <br><br>
-         <label>Course Applies for</label>
 
+         <label>Course Applies for</label>
+         <br>
          <input type="checkbox">BCA(Bachelor of Computer Application)
          <br>
          <input type="checkbox">B.com(Bachelor of Commerce)

@@ -7,20 +7,20 @@
     <title>Form2</title>
 </head>
 <body>
-    <form action="Student.html" method="POST" enctype="multipart/form-data"> 
-        <label for="casenumber:">Case Number</label>
-        <input type="text" name="casenumber" id="casenumber" required>
+    <form action="Student.html" method="post"> 
+        <label for="casenumber">Case Number</label>
+        <input type="text"  id="casenumber" name="casenumber" required>
         <br><br>
-        <label for="controller1(IP/Name):">Controller1(IP/Name)</label>
+        <label for="controller1(IP/Name)">Controller1(IP/Name)</label>
         <input type="text" name="controller1(IP/Name)" id="controller1(IP/Name)" required>
         <br><br>
-        <label for="controller2(IP/Name):">Controller2(IP/Name)</label>
+        <label for="controller2(IP/Name)">Controller2(IP/Name)</label>
         <input type="text" name="controller2(IP/Name)" id="controller2(IP/Name)" required>
         <br><br>
-        <label for="username:">Username</label>
+        <label for="username">Username</label>
         <input type="text" name="username" id="username" placeholder="root">
         <br><br>
-        <label for="password:">Password</label>
+        <label for="password">Password</label>
         <input type="text" name="password" id="password" required>
         <br><br>
         <label>perfstat time:</label>runs X times the selected perfstat times
@@ -36,10 +36,14 @@
         <label>Execute</label>
         <select>
             <option>Schedule</option>
-            <option>Once</option>
-            <option>2014/10/07</option>
-            <option>8:20</option>
         </select>
+        
+    <select>
+            <option>Once</option>
+        </select>
+   
+        <input type="date" name="DOB" id="DOB" required>
+            <input type="time">
         <br>
         <hr>
         <input type="checkbox">do not capture information from local host
@@ -52,17 +56,17 @@
         <br>
         <input type="checkbox">use RSH instead of SSH (RSH needs to be already configured)
         <br>
-        <input type="checkbox">wait X minute between perfstat.default is 0
+        <input type="number" value="0"> wait X minute between perfstat.default is 0
         <br>
-        <input type="checkbox">x minute to wait for perfstat execution to complete.Default is 5
+        <input type="number" value="5"> x minute to wait for perfstat execution to complete.Default is 5
         <br>
         <hr>
-        <label>Output location:<scriptDirectory>\<casenar>_perfstat_date</label>
+        <label>Output location:&#60;scriptDirectory&#62;\&#60;casenar&#62;_perfstat_&#60;date&#62;_&#60;time&#62;.out</label>
         <br>
-        <input type="text" name="username" placeholder="Generate cmd"> <input type="textarea">
+        <input type="text" name="username" placeholder="Generate cmd"> <input type="text">
         <hr>
         <button type="button"> Start</button>
-        <button type="button"> Start</button>
+        <button type="button">Back</button>
 
 </form>
 <hr>
