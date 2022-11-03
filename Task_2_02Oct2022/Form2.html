@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+</head>
+<body>
+    <form action="Student.html" method="POST" enctype="multipart/form-data"> 
+        <label for="casenumber:">Case Number</label>
+        <input type="text" name="casenumber" id="casenumber" required>
+        <br><br>
+        <label for="controller1(IP/Name):">Controller1(IP/Name)</label>
+        <input type="text" name="controller1(IP/Name)" id="controller1(IP/Name)" required>
+        <br><br>
+        <label for="controller2(IP/Name):">Controller2(IP/Name)</label>
+        <input type="text" name="controller2(IP/Name)" id="controller2(IP/Name)" required>
+        <br><br>
+        <label for="username:">Username</label>
+        <input type="text" name="username" id="username" placeholder="root">
+        <br><br>
+        <label for="password:">Password</label>
+        <input type="text" name="password" id="password" required>
+        <br><br>
+        <label>perfstat time:</label>runs X times the selected perfstat times
+        <select>
+            <option>15min(3*5min)</option>
+        </select>
+        <br>
+        <label>number of runs</label>
+        <select>
+            <option>1</option>
+        </select>
+        <br>
+        <label>Execute</label>
+        <select>
+            <option>Schedule</option>
+            <option>Once</option>
+            <option>2014/10/07</option>
+            <option>8:20</option>
+        </select>
+        <br>
+        <hr>
+        <input type="checkbox">do not capture information from local host
+        <br>
+        <input type="checkbox">froce perfstat to execute all iterations
+        <br>
+        <input type="checkbox">capture profile
+        <br>
+        <input type="checkbox">Execute only critical set of commands(when the controller does not respond)
+        <br>
+        <input type="checkbox">use RSH instead of SSH (RSH needs to be already configured)
+        <br>
+        <input type="checkbox">wait X minute between perfstat.default is 0
+        <br>
+        <input type="checkbox">x minute to wait for perfstat execution to complete.Default is 5
+        <br>
+        <hr>
+        <label>Output location:<scriptDirectory>\<casenar>_perfstat_date</label>
+        <br>
+        <input type="text" name="username" placeholder="Generate cmd"> <input type="textarea">
+        <hr>
+        <button type="button"> Start</button>
+        <button type="button"> Start</button>
+
+</form>
+<hr>
+<ol type="1">
+    <li><a href= "Student_Reg_Form.html"> Student</a></li>
+    <li><a href= "Form.html"> Form</a></li>
+    <li><a href= "Form2.html">Form2</a></li>
+    <li><a href= "Form3.html">Form3 </a></li>
+    <li><a href= "Form4.html"> Form4</a></li>
+ </ol>
+
+
+
+
+</body>
+</html>
