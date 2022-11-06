@@ -7,131 +7,143 @@
     <title>Employe regestration form</title>
 </head>
 <body>
-    <form action="Student.html" method="get" enctype="multipart/form-data"> 
+    <form action="Employe_regestration.html" method="get" enctype="multipart/form-data"> 
         <h1>Employe Regestration Form</h1>
         <fieldset>
            <legend>Personal Information</legend>
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" maxlength="50" id="firstname" required>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" maxlength="50" id="firstname"  placeholder="enter a firstname" required>
         <br><br>
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" maxlength="50" id="lastname" required>
+        <label for="middlename">Middle Name:</label>
+        <input type="text" name="middlename" maxlength="50" id="middlename"  placeholder="enter a middlename" required>
         <br><br>
-        <label for="email">Email</label>
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" maxlength="50" id="lastname"   placeholder="enter lastname" required>
+        <br><br>
+        <label for="email">Email:</label>
         <input type="email" id="email"     placeholder="Enter a Email">
         <br><br>
-        <label for="mobilenumber">Mobile Number</label>
-        <input type="text" name="mobilenumber" id="mobilenumber" required>
+        <label for="mobilenumber">Mobile Number:</label>
+        <input type="text" name="mobilenumber" maxlength="10" id="mobilenumber" required>
         <br><br>
-        <label>Gender</label>
+        <label>Gender:</label>
         <input type="radio" value="Male" name="Gender">Male
         <input type="radio" value="Female" name="Gender">Female
         <br><br>
-        <label for="DOB">date of Birth(DOB)</label>
+        <label for="DOB">date of Birth(DOB):</label>
         <input type="date" name="DOB" id="DOB" required>
         <br><br>
         </fieldset>
         <fieldset>
-        <legend>Address</legend><br><br>
-        <label for="P_add">Permanent Address:</label>
-        <input type="text" id="P_add" name="P_add">
+        <legend>Address</legend>
+        <label>Permanent Address:</label><br>
+        <textarea id="Address" name="Address" rows="4" cols="50"></textarea>
         <br><br>
-        <label for="P_add">Present Address:</label>
-        <input type="text" id="Pr_add" name="Pr_add">
+        <label>Present Address:</label><br>
+        <textarea id="Present_Address" name="Present_Address" rows="4" cols="50"></textarea>
         <br><br>
         <label for="P_code">Pin_Code:</label>
-        <input type="text" id="P_code" name="P_code" maxlength="6">
+        <input type="text" id="P_code" maxlength="6" name="P_code" >
         <br><br>
-        <label for="st">State:</label>
-        <select id="st">
-        <option>Karnataka</option>
-        <option>Goa</option>
-        </select>
+        <label for="state">State:</label>
+        <input type="text" name="state" maxlength="50" id="state"   placeholder="Karnataka" required>
         <br><br>
-        <label for="ct">Country:</label>
-        <select id="ct">
-          <option>India</option>
-          <option>bangladesh</option>
-        </select>
-          <br><br>
-          <label for="Ac">Adhar_Card:</label>
-           <input type="file" id="Ac" name="Ac" >
+        <label for="country">Country:</label>
+        <input type="text" name="country" maxlength="50" id="country"   placeholder="India" required>
+        <br><br>
+          <label for="adhar_card">Adhar_Card:</label>
+           <input type="file" id="adhar_card" name="adhar_card" >
           <br><br>
           </fieldset>
           <fieldset>
             <legend>Qualification</legend>
-            <label for="qua">10th:</label>
-            <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua">
+            <label>10th:</label>
+            <input type="text" placeholder="%" >
+            <input type="text" placeholder="year of passedout"> &emsp;
+            <label>Certificate</label> 
+            <input type="file" id="10th" name="10th">
             <br><br>
-            <label for="qua">12th or diploma:</label>
+            <label>12th or Diploma:</label>
             <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua">
-             <br> <br>
-            <label for="qua">degree:</label>
-            <input type="text" placeholder="% or CGPA" >
-            <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"> 
+            <input type="text" placeholder="year of passedout"> &emsp;
+            <label>Certificate</label> 
+            <input type="file" id="12thorDiploma" name="12th or diploma">
             <br><br>
-            <label for="qua">Postgraduation:</label>
+            <label>Degree:</label>
+            <input type="text" placeholder="% or CGPA" >
+            <input type="text" placeholder="year of passedout"> &emsp;
+            <label>Certificate</label> 
+            <input type="file" id="Degree" name="Degree"> 
+            <br><br>
+            <!---label for="Postgraduation">Postgraduation:</label>
             <input type="text" placeholder="% or CGPA" >
             <input type="text" placeholder="year of passedout">
-            <input type="file" id="qua" name="qua"> 
-            <br><br>
-            <label for="qua">Other_Cources:</label>
-            <input type="text" placeholder="Training">
-            <input type="file" id="qua" name="qua"> 
+            <label>Certificate</label> 
+            <input type="file" id="Postgraduation" name="Postgraduation"><br><br-->
+
+            <label>Other_Cources:</label>
+            <input type="text" placeholder="Training"> &emsp;
+            <label>Certificate</label>
+            <input type="file" id="Other_Cources" name="Other_Cources"> 
             <br><br>
          </fieldset>
          <fieldset>
             <legend>Other Information</legend>
-            <label for="skills">Technical_Skills:</label>
-            <select id="skills">
-              <option>java</option>
-            <option>python</option>
-            <option>sql</option>
-            <option>Testing</option>
-            </select>
+            <label>Technical_Skills:</label>
+            <br>
+            <input type="checkbox">java
+            <input type="checkbox">sql
+            <input type="checkbox">HTML
+            <label>Others:</label>
+            <input type="text" id="other" name="other">
             <br><br>
-            <label for="hobby">Hobbies:</label>
-           <select id="hobby">
-          <option>Singing</option>
-          <option>Dancing</option>
-          </select>
-          <label for="others">Others:</label>
-          <select id="others">
-         <input type="text">
+            <label for="hobbies">Hobbies:</label>
+            <br>
+            <input type="checkbox">Singing
+            <input type="checkbox">dancing
+            <input type="checkbox">drawing
+          <label>Others:</label>
+          <input type="text" id="hobbies" name="other">
           <br><br>
-          <label for="ln">Languages Known:</label>
+          <label>Languages Known:</label>
+          <br>
           <input type="checkbox">Kannada
           <input type="checkbox">English
           <input type="checkbox">Hindi
-          <input type="checkbox">
-          <input type="text">
+          <label>Others:</label>
+          <input type="text" id="lang" name="other">
           <br><br>
-          <label for="ln">Work_Experience:</label>
-          <input type="checkbox">Fresher
-          <input type="checkbox">Years of Experience <input type="text">
+          <label>Work_Experience:</label>
           <br><br>
-          <label for="ln">Experienced_Field:</label>
-          <input type="text"><br><br>
+          <input type="radio" id="Fresher" name="Work_Experience">
+          <label for="Fresher"> Fresher</label> &#160;&#160;
+          <label>Year of passedout</label>
+          <input type="number">
+          <br><br>
+          <input type="radio" id="Experience" name="Work_Experience">
+          <label for="Experience"> Experience</label> &#160;&#160;
+          <label>Years of Experience</label>
+          <input type="number">
+          <br><br>
           <label for="resume">Resume:</label>
-          <input type="file" id="resume" name="resume" > 
-            <br><br>
-            <label for="photo">Photo:</label>
-            <input type="file" id="photo" name="photo" maxlength="40kb"> 
+          <input type="file" id="resume" name="resume"  accept=".pdf"> 
+         <br><br>
+          <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept=".jpg">
             <br><br>
             <label for="resume">signature:</label>
-            <input type="file" id="sign" name="sign" maxlength="40kb"> 
+            <input type="file" id="sign" name="sign" accept=".jpg"> 
             <br><br>
-            <a href="qualesce.com">Company_Link</a>
+    </fieldset>
+    <fieldset>
+           <legend>Company Details</legend>
+           <label>Address</label>
+           <Address> No 628/a, Software Industry Ngf, 1st Stage,<br> Indiranagar, Bengaluru, Karnataka 560038</Address>
+            <a href="https://www.qualesce.com/">Company_Link</a>
             <br><br>
+          </fieldset>
             <input type="Submit">
 
-    </fieldset>     
-    <br><br>
       </form>
 </body>
 </html>
