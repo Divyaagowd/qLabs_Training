@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'MuseoModerno', cursive;
+
+}
+/* section1 css starts */
+
+.sec1Container{
+    background-color: whitesmoke;
+    text-align: center;
+
+}
+.sec1wrapper{
+    max-width: 1200px;
+}
+
+.sec1Art1 h1{
+    font-weight: 300;
+    font-size: 50px;
+}
+.sec1Art1 p{
+    color: #556575;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.sec1Art2 p{
+    color: #666;
+    line-height: 1.4;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+.betterWorld{
+    color: #43b049;
+}
+a{
+    text-decoration: none;
+    margin: 10px;
+
+}
+.knowMore{
+    color: #556575;
+    font-size: 18px;
+   line-height: 1.5;
+   font-weight: 500;
+   margin-bottom: 10px;
+}
+
+.download{
+    background-color: #43b049;
+     color:white;
+     border: 1px solid  #358b3a; 
+     padding: 4px 20px;
+     border-radius: 20px;
+     cursor: pointer;
+     line-height: 2;
+     margin-bottom: 40px;
+}
+.download:hover{
+    background-color: #358b3a;
+    color:white;
+    border: 1px solid #43b049;
+    cursor: pointer;
+}
+
+
+
+/* section1 css ends */
