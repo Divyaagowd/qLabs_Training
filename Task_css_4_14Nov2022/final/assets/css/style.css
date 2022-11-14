@@ -1,0 +1,83 @@
+/* universal selector starts */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* universal selector ends */
+
+/* header css starts */
+.headerContainer {
+  background-color: lightblue;
+}
+.headerContainer h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.headerWrapper,
+.birdsSec1Wrapper {
+  max-width: 1200px;
+}
+/* header css ends */
+
+/* All wrapper classes starts */
+
+/* All wrapper classes starts */
+
+/*selections css starts */
+.birdsSec1Container {
+  background-color: lightskyblue;
+}
+.birdsSec1Container h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.birdsSec1Wrapper {
+  background-color: beige;
+  padding: 0 0 100px 0;
+}
+.birdsSec1Wrapper article {
+  display: inline-block;
+  width: 500px;
+  margin: 0 40px;
+  box-shadow: -2px 4px 6px 2px black;
+}
+.birds {
+  padding: 40px;
+}
+.parrot h3,
+.cranes h3 {
+  margin: 10px 0 10px 0;
+  color: lightseagreen;
+  text-decoration: double;
+}
+.parrot p,
+.cranes p {
+  margin: 0 0 10px 0;
+}
+.parrot a,
+.cranes a {
+  margin: 0 0 0 10px;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.parrot p,
+.cranes p {
+  margin: 10px;
+  line-height: 1.4;
+}
+a {
+  background-color: lightblue;
+  color: black;
+}
+
+a:hover {
+  background-color: aliceblue;
+}
+
+/*selections css starts */
