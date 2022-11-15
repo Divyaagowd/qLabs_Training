@@ -1,77 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'MuseoModerno', cursive;
-
+body {
+  font-family: "MuseoModerno", cursive;
+  background-color: whitesmoke;
 }
+/* nav tag starts */
+
+.navWrapper{
+  max-width: 1200px;
+}
+/* div tag starts*/
+.navUl{
+ list-style-type: none;
+ display: flex;
+ margin: 10px;
+}
+
+.navUl a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  display: block; 
+  padding:  10px 15px;
+  margin: 15px 0;
+}
+
+.anaconda{
+  font-weight: 500;
+  font-size: 20px;
+  
+}
+/* div of anchor tag starts*/
+div .a1{
+  border: 1px solid gray;
+  background-color:black;
+  color: white;
+  padding:  10px 15px;
+margin: 15px 0;
+border-radius: 30px;
+}
+div .a1:hover{
+  background-color:rgb(7, 142, 163);
+}
+/* div of anchor tag ends*/
+/* nav tag ends */
+
+/* div tag ends*/
+
+
 /* section1 css starts */
 
-.sec1Container{
-    background-color: whitesmoke;
-    text-align: center;
-
-}
-.sec1wrapper{
-    max-width: 1200px;
-}
-
-.sec1Art1 h1{
-    font-weight: 300;
-    font-size: 50px;
-}
-.sec1Art1 p{
-    color: #556575;
-    font-size: 22px;
-    font-weight: 300;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-.sec1Art2 p{
-    color: #666;
-    line-height: 1.4;
-    font-weight: 500;
-    margin-top: 10px;
-
-}
-.betterWorld{
-    color: #43b049;
-}
-a{
-    text-decoration: none;
-    margin: 10px;
-
-}
-.knowMore{
-    color: #556575;
-    font-size: 18px;
-   line-height: 1.5;
-   font-weight: 500;
-   margin-bottom: 10px;
-}
-
-.download{
-    background-color: #43b049;
-     color:white;
-     border: 1px solid  #358b3a; 
-     padding: 4px 20px;
-     border-radius: 20px;
-     cursor: pointer;
-     line-height: 2;
-     margin-bottom: 40px;
-}
-.download:hover{
-    background-color: #358b3a;
-    color:white;
-    border: 1px solid #43b049;
-    cursor: pointer;
+.sec1Container  {
+  /* background-color: whitesmoke; */
+  text-align: center;
 }
 
 
+.sec1wrapper h2 {
+   max-width: 1200px;
+   color: #43b049;
+   text-align: center;
+
+}
+
+.sec1Art1 h1 {
+  font-weight: 300;
+  font-size: 50px;
+}
+.sec1Art1 p {
+  color: #556575;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.sec1Art2 p {
+  color: #666;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  margin: 2px ;
+  cursor: pointer;
+
+}
+.knowMore {
+  color: #556575;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.download {
+  
+  background: #43b049 url("../img/windows-logo-black.svg.svg") no-repeat;
+  background-position: 110px;
+  background-size: 16px;
+  color: white;
+  border: 1px solid #358b3a;
+  padding: 4px 40px 4px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  line-height: 2;
+  margin-bottom: 40px;
+}
+.download:hover {
+  background-color: #358b3a;
+  color: white;
+  border: 1px solid #43b049;
+  cursor: pointer;
+}
 
 /* section1 css ends */
