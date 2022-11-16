@@ -1,14 +1,21 @@
-* {
+
+/* universal selector start */
+
+*{
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 }
+/* universal selector ends */
+/* h1 tag starts */
 h1 {
   color: #282a35;
   font-size: 29px;
   font-weight: 700;
   padding-bottom: 40px;
+  /* h1 tag ends */
 }
+/* form tag starts */
 form {
   position: absolute;
   top: 50%;
@@ -19,6 +26,7 @@ form {
   padding: 90px;
   font-weight: bold;
 }
+
 .w3 {
   margin-left: 8px;
   left: 30px;
@@ -77,13 +85,15 @@ input[type="submit"]:hover {
   background-size: 16px;
   padding: 8px 20px;
 }
+/* form tag ends */
+/* div tag starts */
 .help {
   margin-top: 555px;
   color: lightslategrey;
   margin: 30px 50px 30px 40px;
   padding: 10px 30px 10px 20px;
   left: 320px;
-  top: 512px;
+  top: 518px;
   position: fixed;
 }
 .help a {
@@ -109,3 +119,4 @@ input[type="button"] {
   background-position: -1px;
   background-size: 16px; */
 }
+/* div tag ends */
