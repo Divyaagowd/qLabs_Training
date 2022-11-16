@@ -1,0 +1,111 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #282a35;
+  font-size: 29px;
+  font-weight: 700;
+  padding-bottom: 40px;
+}
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  padding: 90px;
+  font-weight: bold;
+}
+.w3 {
+  margin-left: 8px;
+  left: 30px;
+  top: 20px;
+  position: fixed;
+}
+.close {
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  margin-right: 8px;
+}
+input[type="text"] {
+  padding: 10px 70px;
+  margin: 5px;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  padding: 10px 120px;
+  margin: 5px 5px 20px;
+  border-radius: 30px;
+  background-color: #04aa6d;
+  color: #e3e3e3;
+  font-weight: bold;
+}
+input[type="submit"]:hover {
+  background-color: #06794f;
+  cursor: pointer;
+}
+.forgot1 {
+  padding: 10px 70px;
+  margin: 5px 5px 20px;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+.forgot1:hover {
+  color: #04aa6d;
+}
+.sign a {
+  color: #04aa6d;
+  text-decoration: none;
+}
+.sign,
+.show {
+  font-weight: lighter;
+}
+.sign {
+  margin-left: 73px;
+}
+.show {
+  margin-left: 155px;
+  background: url(../img/eye-fevicon.png) no-repeat;
+  background-position: -1px;
+  background-size: 16px;
+  padding: 8px 20px;
+}
+.help {
+  margin-top: 555px;
+  color: lightslategrey;
+  margin: 30px 50px 30px 40px;
+  padding: 10px 30px 10px 20px;
+  left: 320px;
+  top: 512px;
+  position: fixed;
+}
+.help a {
+  color: lightslategrey;
+}
+.help a:hover {
+  color: #04aa6d;
+  border: 2px solid #059862;
+}
+
+input[type="button"] {
+  margin: 30px 50px 30px 40px;
+  padding: 10px 30px 10px 20px;
+  right: 2px;
+  top: 490px;
+  position: fixed;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  background-color: #04aa6d;
+  /* background: url(../img/question.png) no-repeat;
+  background-position: -1px;
+  background-size: 16px; */
+}
