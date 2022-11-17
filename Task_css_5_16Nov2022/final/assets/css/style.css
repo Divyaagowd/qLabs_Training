@@ -15,18 +15,8 @@ h1 {
   padding-bottom: 40px;
   /* h1 tag ends */
 }
-/* form tag starts */
-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid #e3e3e3;
-  border-radius: 16px;
-  padding: 90px;
-  font-weight: bold;
-}
 
+/* nav tag starts */
 .w3 {
   margin-left: 8px;
   left: 30px;
@@ -39,10 +29,23 @@ form {
   top: 20px;
   margin-right: 8px;
 }
+/* nav tag ends */
+/* form tag starts */
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #e3e3e3;
+  border-radius: 16px;
+  padding: 90px;
+  font-weight: bold;
+}
 input[type="text"] {
   padding: 10px 70px;
   margin: 5px;
   border-radius: 5px;
+  border: 1px solid  #e3e3e3;
 }
 input[type="submit"] {
   padding: 10px 120px;
@@ -51,6 +54,7 @@ input[type="submit"] {
   background-color: #04aa6d;
   color: #e3e3e3;
   font-weight: bold;
+  border: 1px solid  #e3e3e3;
 }
 input[type="submit"]:hover {
   background-color: #06794f;
@@ -58,7 +62,7 @@ input[type="submit"]:hover {
 }
 .forgot1 {
   padding: 10px 70px;
-  margin: 5px 5px 20px;
+  margin: 5px 2px 20px;
   border-radius: 20px;
   color: black;
   font-weight: bold;
@@ -76,10 +80,10 @@ input[type="submit"]:hover {
   font-weight: lighter;
 }
 .sign {
-  margin-left: 73px;
+  margin-left: 80px;
 }
 .show {
-  margin-left: 155px;
+  margin-left: 160px;
   background: url(../img/eye-fevicon.png) no-repeat;
   background-position: -1px;
   background-size: 16px;
@@ -95,6 +99,7 @@ input[type="submit"]:hover {
   left: 320px;
   top: 518px;
   position: fixed;
+  
 }
 .help a {
   color: lightslategrey;
@@ -115,6 +120,7 @@ input[type="button"] {
   color: white;
   font-weight: bold;
   background-color: #04aa6d;
+  border: 1px solid  #e3e3e3;
   /* background: url(../img/question.png) no-repeat;
   background-position: -1px;
   background-size: 16px; */
