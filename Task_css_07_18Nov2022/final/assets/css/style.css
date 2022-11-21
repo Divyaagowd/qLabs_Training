@@ -1,0 +1,15 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.ellipsis{
+    cursor: pointer;
+ }
+ ul li{
+    list-style-type: none;
+ 
+    
+ }
