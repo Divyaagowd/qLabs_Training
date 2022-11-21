@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellipse</title>
+    <script
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"></script>
+   <style>
+ .ellipsis{
+    cursor: pointer;
+ }
+ ul li{
+    list-style-type: none;
+ 
+    
+ }
+   </style>
+</head>
+<body>
+    <img src="ellipsis.png" alt="ellipsis" class="ellipsis">
+    <ul>
+        <li>New tab</li>
+        <li>New window</li>
+        <li>New InPrivate window</li>
+        <li>Zoom</li>
+        <li>Favourites</li>
+        <li>Collections</li>
+        <li>History</li>
+        <li>Shoppings</li>
+        <li>Downloads</li>
+        <li>Apps</li>
+        <li>Games</li>
+        <li>Extensions</li>
+        <li>Performance</li>
+        <li>Print</li>
+        <li>Web capture</li>
+        <li>Web select</li>
+        <li>Find on page</li>
+        <li>Read aloud</li>
+        <li>Settings</li>
+        <li>Show sidebar</li>
+        <li>Help and feedback</li>
+    </ul>
+</body>
+<script>
+$(document).ready(function(){
+    $(".ellipsis").click(function(){
+      $("ul").toggle(1000);
+    });
+  });
+</script>
+</html>
