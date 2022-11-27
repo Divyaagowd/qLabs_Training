@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+}
+.wrapper {
+  max-width: 1200px;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+  margin-bottom: 100px;
+}
+
+.logo {
+  position: relative;
+  left: 70%;
+}
+.careers {
+  display: flex;
+  position: relative;
+  top: 15px;
+  margin-left: 50%;
+}
+.careers a {
+  padding: 10px;
+  text-decoration: none;
+}
+.careers a:hover {
+  color: #eb4646;
+}
+h1,
+h2 {
+  font-size: 45px;
+  color: #2e3c4a;
+}
+
+.sec1turn,
+.sec2team,
+.sec3work {
+  position: relative;
+  left: 5%;
+}
+.par1 {
+  margin-bottom: 50px;
+  font-size: 25px;
+  color: #2e3c4a;
+}
+.art1,
+.art2,
+.art3 {
+  display: inline-block;
+  width: 200px;
+  margin: 0 0 0 40px;
+}
+
+.art1,
+.art2,
+.art3 p {
+  margin: 0 0 40px 0;
+  font-weight: 120px;
+  color: #2e3c4a;
+}
+.art1,
+.art2,
+.art3 h3 {
+  margin: 5px;
+}
+
+.sec2team h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  padding: 0 0 10px 0;
+}
+.sec2team p {
+  margin-bottom: 10px;
+  color: #2e3c4a;
+}
+.sec3work h2,
+p {
+  margin-bottom: 40px;
+}
+.sec3work p {
+  font-size: 20px;
+  color: #2e3c4a;
+}
+table td,
+tr,
+th {
+  border-collapse: collapse;
+  margin: 50px;
+  padding: 10px;
+  text-align: left;
+  color: #2e3c4a;
+}
+tr:nth-child(odd) {
+  background-color: lightgray;
+}
+table {
+  cursor: pointer;
+}
+.td1,
+.td2,
+.td3,
+.td4,
+.td5,
+.td6,
+.td7,
+.td8 {
+  font-weight: bold;
+  font-size: 15px;
+}
+.head:hover,
+.td1:hover,
+.td2:hover,
+.td3:hover,
+.td4:hover,
+.td5:hover,
+.td6:hover,
+.td7:hover,
+.td8:hover {
+  color: #eb4646;
+}
