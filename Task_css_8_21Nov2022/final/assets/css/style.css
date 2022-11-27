@@ -24,10 +24,14 @@ ul {
   position: relative;
   top: 15px;
   margin-left: 50%;
+
 }
 .careers a {
   padding: 10px;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 19px;
+  color:#2E3C4A;
 }
 .careers a:hover {
   color: #eb4646;
