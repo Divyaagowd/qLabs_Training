@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop_up</title>
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="button">Submit</button>
+    <div id="popup_container">
+        <div id="close_btn_container">
+        <img src="assets/img/close.png" id="close_btn"></div>
+    <h2>Thank You</h2>
+    <p>Your details as been successfully submitted. Thanks!</p></div></div>
+     <script >
+        $(document).ready(function(){
+                $("#button").click(function(){
+                    $("#popup_container").show();
+                })
+                $("#close_btn").click(function(){
+                    $("#popup_container").hide();
+                })
+            })
+
+     </script>
+    
+</body>
+</html>
