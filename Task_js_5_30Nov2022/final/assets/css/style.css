@@ -4,53 +4,102 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
-} 
-section{
-   max-width: 1200px;
-   padding:  50px 0;
 }
- form{
-   
-   margin: 20px;
-   /* width: 600px; */
-   position: absolute;
-     top: 50%;
-        left: 50%;
-     transform: translate(-50%, -50%);
-     border-radius: 20px;
-      box-shadow: -2px 3px 21px 3px gray;
-    
-     padding: 20px;
-     background-color: lightgrey;
-     
-  
- }
 
-form label{
+.wrapper{
+    max-width: 1200px;
+}
+
+body{
     font-family: 'Poppins', sans-serif;
-    margin: 5px 0  0 0px ;
-    padding: 10px;
-    font-weight: 400;
-  
- }
+}
+form{
+    margin: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: -2px 3px 21px 3px gray;
+    padding: 30px;
+    background-color:lightgray ;
+    width: 500px;
+    height: 700px;
+  }
 
- input{
-    margin: 10px 0 10px 10px ;
-    padding: 5px;
-    outline: none;
-    font-size: 15px;
- }
+  .container label{
+    font-size: 16px;
+    margin-left: 5px;
 
- input[type=mail]{
-    margin: 10px 0 10px 8px;
-    padding: 5px; 
+  }
+.boxText{
     width: 200px;
+    padding: 6px;  
+  
+}
+
+input[type="radio"]{
+    display: none;
+}
+/* radio button css */
+.edu1,
+.board{
+   background-color: rgba(100, 189, 182, 0.445);
+   position: relative;
+   top: 15px;
+   bottom: 10px;
+   font-family: 'Poppins', sans-serif;
+   border:  2px solid lightblue;
+   padding: 3px;
+   border-radius: 10px;
+   align-items: center;
+
+}
+.mailIdBox{
+    width: 200px;
+    padding: 3px;
+}
+
+/* placeholder css */
+.scoreInput{
+    position: relative;
+    top: 20px;
+    bottom: 20px;
+    padding: 3px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.edu1:before{
+    position: absolute ;
+    content: "";
+  
+
+}
+.board:before{
+    position: absolute;
+    content: "";
+}
+
+ 
+input:checked + .edu1{
+    background-color: rgb(100, 189, 182);  
+
+} input[type="radio"] :checked+ .board{
+    background-color: rgb(100, 189, 182);  
+
  } 
 
- input:hover{
-    border: 2px solid rgba(165, 42, 42, 0.788);
- }
-.flex_box{
+/* css board selection */
+.board{
+    display: none;
+}
+
+
+
+
+ 
+ .flex_box{
     display: flex;
     margin: 0; 
 
@@ -63,14 +112,56 @@ label ,
     padding: 0px;
 }
 
- .submit{
-   margin: 10px 10px 10px 0px;
-  padding: 10px 20px;
-  border-radius: 20px;
-  border: none;
-  color: brown;
-  font-size: 17px;
-  font-weight: 600;
-  cursor: pointer;
-  background-color: rgba(169, 169, 169, 0.425);
- }  
+
+/* popup css  details */
+
+.popup .card{
+    position: fixed;
+    background-color:rgba(0,0,0,0.7); 
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    /* display: none; */
+}
+
+ .popup .displayContent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: rgb(227, 238, 238);
+    border-left: 5px solid lightgray;
+    width: 350px;
+    height: 250px ;
+    z-index: 2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; 
+}  
+
+.popup .close_btn{
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    color: lightseagreen;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+}
+
+.popup.active .card{
+    display: block;
+}
+
+.popup.active .displayContent{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+}  
+
+.submit{
+    width: 200px;
+}
