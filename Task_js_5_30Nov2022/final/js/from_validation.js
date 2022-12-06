@@ -11,30 +11,52 @@ var hobby="";
 //         document.getElementById("res1").setAttribute("value","10th")
     
 // }
-
 function result1(){
-    var value=document.getElementById("res1").value;
-    console.log(value);
-  if(document.getElementById("res1").on){
-    document.getElementsByClassName("board").style.display="block"
-  }
+        document.getElementById("boardSelection").style.display="block";
 }
-function result2(){
-    var value=document.getElementById("res2").value;
-    console.log(value);
-    // document.getElementById("cgpa").removeAttribute("disabled");
-    document.getElementById("res2").setAttribute("value","PUC/Diploma")
-}
-function result3(){
-    
-    document.getElementById("cgpa").removeAttribute("disabled");
-    document.getElementById("res3").setAttribute("value","BE/Btech")
 
+function selectState(){
+    document.getElementById("percentage").style.display="block";
 }
+function selectCbse(){
+    document.getElementById("cgpa").style.display="block";
+}
+function selectIcse(){
+    document.getElementById("cgpa").style.display="block";
+}
+// function result1(){
+//     var value=document.getElementById("res1").value;
+// }
+function result2(){
+    document.getElementById("boardPuc").style.display="block";
+}
+
+function selectState(){
+    document.getElementById("percentage").style.display="block";
+}
+function selectCbse(){
+    document.getElementById("cgpa").style.display="block";
+}
+// bebtech js
+function result3(){
+    document.getElementById("btechBoard").style.display="block";
+    
+}
+
+function selectVtu(){
+    document.getElementById("cgpa").style.display="block";
+}  
+function selectAutonomous(){
+    document.getElementById("cgpa").style.display="block";
+} 
+
+
+
 function submitForm(){
     var fname= document.getElementById("fname").value;
     var lname= document.getElementById("lname").value;
     var mailId=document.getElementById("mail").value;
+    var mobilenum=document.getElementById("mobileno").value;
     var cgpa=document.getElementById("cgpa").value;
     var res1 = document.getElementById("res1").getAttribute("value");
     var res2 = document.getElementById("res2").getAttribute("value");
@@ -113,7 +135,7 @@ function submitForm(){
                    
            }
 
-           hobby= hobby+""+check;
+           hobby= hobby+" "+check;
             // console.log(hobby);
        }
       
@@ -123,9 +145,10 @@ function submitForm(){
        var message=`Hi HR 
        My name is ${fname} ${lname}
        I've completed ${education} with
-       ${cgpa} % or cgpa
-       And my mail id is"${mailId}"
-       And my hobbies are "${hobby}"
+       ${cgpa} 
+       My mail id is"${mailId}"
+       My Contact no :${mobilenum}
+       My hobbies are "${hobby}"
        Thank you ${fname} ${lname}`;
        console.log(message);
        
