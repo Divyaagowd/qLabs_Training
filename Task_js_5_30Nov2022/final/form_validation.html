@@ -16,7 +16,7 @@
             <label for="lname">Last name:</label><br>
             <input type="text" id="lname" name="lname" required class="boxText"><br>
     
-            <input type="radio" id="res1" name="education" onclick="result1()">
+            <input type="radio" id="res1" name="education" onclick="result1()" value="10th">
             <label for="res1" class="edu1">10th</label>
     
             <input type="radio" id="res2" name="education"  onclick="result2()">
@@ -26,28 +26,43 @@
             <label for="res3" class="edu1" >BE/Btech</label><br>
         <!-- state board radio  button -->
         <br>
-        <div class="boardSelection">
-        <input type="radio" id="board1" name="education"  value="State">
+        <div id="boardSelection" class="selectionofboard">
+        <input type="radio" id="board1" name="education"  value="State" onclick="selectState()">
             <label for="board1" class="board" >State</label>
-            <input type="radio" id="res3" id="board2" name="education" value="CBSE"  >
+            <input type="radio"  id="board2" name="education" value="CBSE" onclick="selectCbse()" >
             <label for="board2" class="board" id="board2" >CBSE</label>
-            <input type="radio" id="res3"  id="board3"name="education"  value="ICSE" >
-            <label for="board3" class="board"  >ICSE</label><br>
+            <input type="radio" id="board3"  id="board3"name="education"  value="ICSE"onclick="selectIcse()" >
+            <label for="board3" class="board"  >ICSE</label>
+            
         </div>
-
-
-            <input type="number" id="cgpa"  step="0.01" placeholder="Enter Your CGPA" class="scoreInput" min="0" max="10">
-            <br>
-            <input type="number" id="cgpa"  step="0.01" placeholder="Enter Your PERCENTAGE" class="scoreInput" min="0" max="100">
-            <!-- <label for="cgpa">% or cgpa</label> -->
-            <br><br>
-            <label for="mail" class="mailId">Mail Id:</label><br>
+        <br>
+        <span id="boardPuc">
+        
+            <input type="radio" id="puc1" name="education"  value="State" onclick="selectState()">
+                <label for="puc1" class="board" >State</label>
+                <input type="radio"  id="puc2" name="education" value="CBSE" onclick="selectCbse()" >
+                <label for="puc2" class="board" id="board2" >CBSE</label>
+        </span>
+            
+<div id="btechBoard">
+    <input type="radio" id="vtu" name="education"  value="VTU" onclick="selectVtu()">
+    <label for="vtu" class="board" >VTU</label>
+    <input type="radio"  id="autonomous" name="education" value="CBSE" onclick="selectAutonomous()" >
+    <label for="autonomous" class="board"  >Autonomous</label>
+</div>
+            <input type="number" id="cgpa"  step="0.01" placeholder="Enter Your CGPA" class="scoreInput" min="0" max="10"><br>
+            <input type="number" id="percentage"  step="0.01" placeholder="Enter Your PERCENTAGE" class="scoreInput1" min="0" max="100">
+          <!-- <br><br> -->
+             <label for="mail" class="mailId">Mail Id:</label><br>
             <input type="email" class="mailIdBox" id="mail" name="mail"  required >
             <br>
-            <label for="country">Country:</label><br>
-            <input type="number" class="mailIdBox"><br>
+            <div>
+                <label class="code">Country</label>
+               <select id="countryCodes"></select>
+            </div>
+            <br>
             <label for="mobileno">Mobile no:</label><br>
-            <input type="number" class="mailIdBox" id="mobileno" name="mobileno" required  maxlength="10"><br>
+            <input type="text" class="mailIdBox" id="mobileno" name="mobileno" required  maxlength="10"><br>
             
             <label for="hobbies">Hobbies</label>
             <div class="flex_box">
@@ -78,7 +93,7 @@
         </div>
     
     </div>  
-     <!-- <input type="submit" onclick="Submits()" class="submit"> -->
+    
            <!-- HTml popup -->
             <div class="popup" id="popup_1">
             <div class="card"></div>
@@ -87,7 +102,7 @@
           <p > <strong id="display_Content"></strong></p>
         </div>
         </div>
-        <button onclick="submitForm()">Submit</button>
+        <button onclick="submitForm()" class="submit">Submit</button>
         </form>
       
     </section>
