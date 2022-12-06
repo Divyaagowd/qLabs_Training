@@ -21,22 +21,42 @@ form{
     transform: translate(-50%, -50%);
     border-radius: 20px;
     box-shadow: -2px 3px 21px 3px gray;
-    padding: 30px;
-    background-color:lightgray ;
+    padding: 20px; 
+    background-color:rgba(124, 174, 190, 0.418) ;
     width: 500px;
-    height: 700px;
+    /* /* height: 800px;  */
+   
   }
-
+/* education */
   .container label{
     font-size: 16px;
-    margin-left: 5px;
+    /* margin: 10px 10px 10px 8px; */
+    /* padding: 3px;
+    border-color: brown;
+    background-color: blue; */
+  } 
 
-  }
+   form  label{
+/* background-color: red; */
+padding: 3px;
+margin: 10px 0 40px 10px;
+
+   }
 .boxText{
     width: 200px;
     padding: 6px;  
+    margin: 10px 0px 0px 10px; 
+    border-color: brown;
+}
+input{
+    outline:none;
+    /* background-color: red; */
+    margin-top: 10px;
   
 }
+
+
+
 
 input[type="radio"]{
     display: none;
@@ -55,25 +75,47 @@ input[type="radio"]{
    align-items: center;
 
 }
+
 .mailIdBox{
     width: 200px;
-    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px;
+    border-color: brown;
 }
 
 /* placeholder css */
 .scoreInput{
     position: relative;
-    top: 20px;
+    top: 10px;
+    /* bottom: 20px; */
+    padding: 3px;
+    width: 200px;
+    margin-top: 20px;
+    /* background-color: blue; */
+}
+
+.scoreInput1{
+    position: relative;
+    top: 10px;
     bottom: 20px;
     padding: 3px;
     width: 200px;
-    margin-top: 10px;
+    margin-top: 5px;
+   margin-bottom: 10px;
+    /* background-color: blue; 
+    border: 2px solid red; */
 }
-
+/* .edu1 {
+    background-color: burlywood;
+} */
 .edu1:before{
     position: absolute ;
     content: "";
-  
+    height: 10px;
+    width: 10px;
+    /* border: 2px solid black;
+    border-radius: 5px; */
+    margin: 10% 5% 0 0;
 
 }
 .board:before{
@@ -85,23 +127,46 @@ input[type="radio"]{
 input:checked + .edu1{
     background-color: rgb(100, 189, 182);  
 
-} input[type="radio"] :checked+ .board{
+} 
+
+input:checked+ .board{
     background-color: rgb(100, 189, 182);  
 
  } 
 
-/* css board selection */
-.board{
-    display: none;
+span{
+    position: relative;
+
 }
 
+#boardSelection{
+    display: none;
+}
+#boardPuc{
+    display: none;
+}
+#btechBoard{
+    display: none;
+} 
 
+#cgpa{
+    display: none;
+    position: relative;
+    right: 30%;
+    width: 150px;
+}
 
-
- 
+#percentage{
+    display: none;
+    position: relative;
+    right: 30%;
+    top: 1%;
+    width: 150px;
+}
  .flex_box{
     display: flex;
     margin: 0; 
+  
 
 }
 
@@ -110,6 +175,7 @@ label ,
 .box2,label{
     margin: 10px;
     padding: 0px;
+   
 }
 
 
@@ -121,7 +187,7 @@ label ,
     top: 0px;
     left: 0px;
     z-index: 1;
-    /* display: none; */
+    display: none; 
 }
 
  .popup .displayContent{
@@ -130,7 +196,7 @@ label ,
     left: 50%;
     transform: translate(-50%,-50%) scale(0);
     background-color: rgb(227, 238, 238);
-    border-left: 5px solid lightgray;
+    border-left: 5px solid lightseagreen;
     width: 350px;
     height: 250px ;
     z-index: 2;
@@ -163,5 +229,12 @@ label ,
 }  
 
 .submit{
-    width: 200px;
-}
+    margin: 10px 10px 10px 0px;
+   padding: 10px 20px;
+   border-radius: 20px;
+   border: none;
+   font-size: 17px;
+   font-weight: 600;
+   cursor: pointer;
+   background-color:lightseagreen;
+  }  
